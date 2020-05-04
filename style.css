@@ -1,3 +1,75 @@
+@media all and (max-width: 768px)
+{
+    /* cacher la partie gauche, 
+    l'afficher avec le click d'un element en position absolue,avec une propriété z1-index */
+
+#mini_wrapper_gauche
+{
+    display: none !important;
+    color: red;
+}
+
+#main_wrapper
+{
+    display: flex;
+    font-size: 9px !important;
+    flex:1
+}
+.police
+{
+    font-size: 9px !important;
+}
+#centrage_gauche_main_wrapper
+{
+    display: none !important;
+}
+#centrage_droit_main_wrapper
+{
+    display: none !important;
+}
+#marge_mini_wrapper_droite
+{
+    display: none !important;
+}
+h1
+{
+    text-transform: uppercase;
+    font-size: 12px !important;
+}
+header
+{
+    font-size: 12px !important;
+    height: 70px !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+#nom
+{
+    font-size: 20px !important;
+}
+#bouton_mobile_wrapper
+{
+    display: flex !important;
+    justify-content: center !important;
+    color: red;
+    font-size: 14px;
+
+}
+#bouton_mobile_wrapper:active
+{
+    background-color: teal;
+    color: teal;
+}
+a:active
+{
+    background-color: teal;
+
+}
+
+
+}
+
+
 @font-face
 {
     font-family: 'Aba';
@@ -29,6 +101,10 @@ h1
 {
     width: 15%;
     order: 3;
+}
+#bouton_mobile_wrapper
+{
+    display: none;
 }
 
 #main_wrapper
@@ -98,16 +174,10 @@ section
     flex-direction: column;
     flex: 1;
 }
-#sous_formation3x
-{
-    display: flex;
-    flex: 1;
-}
 
-
-#sous_formation3y
+#sous_formation3x, #sous_formation3y
 {
-    display: flex;
+    display : block;
     flex: 1;
 }
 
@@ -117,18 +187,6 @@ section
     flex-direction: column;
     flex: 3;
 }
-#sous_formation4x
-{
-    display: flex;
-    flex: 1;
-}
-
-#sous_formation4y
-{
-    display: flex;
-    flex: 1;
-}
-
 
 
 #experience_professionnelle
@@ -154,23 +212,6 @@ section
     flex: 1;
 }
 
-#sous_experience_professionnelle3x
-{
-    display: flex;
-    flex: 1;
-}
-
-#sous_experience_professionnelle3y
-{
-    display: flex;
-    flex: 1;
-}
-
-#sous_experience_professionnelle3z
-{
-    display: flex;
-    flex: 1;
-}
 
 #sous_experience_professionnelle4
 {
@@ -179,25 +220,11 @@ section
     flex: 3;
 }
 
-#sous_experience_professionnelle4x
+#sous_formation4x, #sous_formation4y, #sous_experience_professionnelle3x, #sous_experience_professionnelle3y, #sous_experience_professionnelle3z, #sous_experience_professionnelle4x, #sous_experience_professionnelle4y, #sous_experience_professionnelle4z, #sous_recommandation2x, #sous_recommandation2y, #sous_contact
 {
-    display: flex;
+    display: block;
     flex: 1;
 }
-
-#sous_experience_professionnelle4y
-{
-    display: flex;
-    flex: 1;
-}
-
-#sous_experience_professionnelle4z
-{
-    display: flex;
-    flex: 1;
-}
-
-
 
 
 #recommandation
@@ -216,19 +243,12 @@ section
     display: flex;
 }
 
-
-#sous_recommandation2x
-{
-    flex: 1;
-}
-
-#sous_recommandation2y
-{
-    flex: 1;
-}
 #photo_du_profil
 {
-    margin: auto;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
 }
 nav
 {
@@ -311,3 +331,24 @@ footer
 {
     font-size: 10px;
 }
+
+ul.normal
+{
+    
+    list-style-type: none;
+
+}
+ul.special
+{
+    list-style-type: none;
+}
+ul li::before
+{
+   
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: orange; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */     
+      
