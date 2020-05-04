@@ -1,0 +1,34 @@
+
+-clarification du css (regroupement des seleteurs qui presente les propriétés similaires)
+-suppression des saut de ligne <br> remplacer par des <p> + display: block;
+-changement de l'ordre du contenu textuelle dans la partie Formation afin d'amelioré la lisibilité
+-modification visuelle des puces de liste ( echec tentative de modifier a la fois la forme  et la couleur des puces )
+-alignement des blocs photo et header.
+-ajout d'un media queries
+
+
+-commenter le code pour amelioré la lisibilité
+-ajout des icones manquantes et utiliser gap en complement
+-verification validation w3p a faire
+-essayer de placer un z-index dans la version mobile(en complement du <a> non terminé)
+-ajouter du referenceement meta dans <head>
+-chercher et placer une police adéquate et regler les tailles
+-agrandir la photo et rajouter un cercle entourant la photo
+-modification du code pour les anciennes version de navigateur web non supporté
+
+
+liste question
+
+Comment savoir quand il faut mettre des dimensions relatives ou des dimensions absolues?
+Faut'il utiliser bootstrap pour le projet 2?
+pourquoi j'ai un probleme de priorité media queries?
+
+divers
+
+fixé des dimensions précise pour les box en utilisant les  dimensions des  4  breaking point
+implémenté un over pour l'affihage portable
+implémenté le responsive design
+dans le détail
+changé les ecriture du block droite , rajouter un gap les disposer en display block rajouter  plusieurs <p> au lieu de sauter de ligne
+
+git bas here , copier le lien cloné
