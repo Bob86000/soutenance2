@@ -1,34 +1,56 @@
+ajout 09/05/2020
 
--clarification du css (regroupement des seleteurs qui presente les propriétés similaires)
--suppression des saut de ligne <br> remplacer par des <p> + display: block;
--changement de l'ordre du contenu textuelle dans la partie Formation afin d'amelioré la lisibilité
--modification visuelle des puces de liste ( echec tentative de modifier a la fois la forme  et la couleur des puces )
--alignement des blocs photo et header.
--ajout d'un media queries
+- Remplacement des balises id , supression des balises Div non necessaire
+- Mise en place du design(couleur/police) et du responsive ( pour tablette , portable , PC )
+- Mise en place des icones manquantes
+- tentative de simplification html et css
 
 
--commenter le code pour amelioré la lisibilité
--ajout des icones manquantes et utiliser gap en complement
--verification validation w3p a faire
--essayer de placer un z-index dans la version mobile(en complement du <a> non terminé)
--ajouter du referenceement meta dans <head>
--chercher et placer une police adéquate et regler les tailles
--agrandir la photo et rajouter un cercle entourant la photo
--modification du code pour les anciennes version de navigateur web non supporté
+
+- Faire un dernier pointbreak responsive
+- Essayer de déplacer les puces en responsive tablette/portable ou a default trouver une solution
+- modifier la police en responsive portable, elle apparait beaucoup trop en gras
+- prevoir plusieurs modèle de Png notamment pour la version Portable et PC, rajouter un cercle noir si possible
+- les icones du bloc loisir sont a redimensionné
+- police illisible du menu , trouver une solution
+
+
+
+
+
+
+
+ajout 02/05/2020
+
+- clarification du css (regroupement des selecteurs qui presente les propriétés similaires)(ameliorer)
+- suppression des saut de ligne <br> remplacer par des <p> + display: block;(a revoir en detail)
+- changement de l'ordre du contenu textuelle dans la partie Formation afin d'amelioré la lisibilité(fait)
+- modification visuelle des puces de liste ( echec tentative de modifier a la fois la forme  et la couleur des puces )(fait a moitié)
+- alignement des blocs photo et header.(fait)
+- ajout d'un media queries(fait)
+
+
+- commenter le code pour amelioré la lisibilité
+- ajout des icones manquantes et utiliser gap en complement
+- verification validation w3p a faire
+- essayer de placer un z-index dans la version mobile(en complement du <a> non terminé)
+- ajouter du referenceement meta dans <head>
+- chercher et placer une police adéquate et regler les tailles
+- agrandir la photo et rajouter un cercle entourant la photo
+- modification du code pour les anciennes version de navigateur web non supporté
 
 
 liste question
 
-Comment savoir quand il faut mettre des dimensions relatives ou des dimensions absolues?
-Faut'il utiliser bootstrap pour le projet 2?
-pourquoi j'ai un probleme de priorité media queries?
+Comment savoir quand il faut mettre des dimensions relatives ou des dimensions absolues? un maximum de mesure relative
+Faut'il utiliser bootstrap pour le projet 2? non
+pourquoi j'ai un probleme de priorité media queries? toujours mettre les queries du plus gros format au plus petit.
 
 divers
 
-fixé des dimensions précise pour les box en utilisant les  dimensions des  4  breaking point
-implémenté un over pour l'affihage portable
-implémenté le responsive design
-dans le détail
-changé les ecriture du block droite , rajouter un gap les disposer en display block rajouter  plusieurs <p> au lieu de sauter de ligne
-
-git bas here , copier le lien cloné
+fixé des dimensions précise pour les box en utilisant les  dimensions des  4  breaking point (fait)
+implémenté un over pour l'affihage portable ( non necessaire)
+implémenté le responsive design (ameliorer)
+changé les ecriture du block droite (fait)
+rajouter un gap les disposer en display block (fait)
+rajouter  plusieurs <p> au lieu de sauter de ligne(fait)
