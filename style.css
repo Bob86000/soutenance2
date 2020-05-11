@@ -17,10 +17,9 @@ html
 
 body
 {
-    font-family: Verdana,Impact;
+    font-family: georgia,Verdana,Impact, Arial, Helvetica, sans-serif, 'Aba';
     display: flex;
     justify-content: center;
-    font-family: georgia;
     
 
 }
@@ -90,14 +89,6 @@ li
     margin: 0;
     padding: 0;
 }
-
-.sous_article
-{
-    display: flex;
-    flex: 1;
-}
-
-
 
 header
 {   
@@ -508,4 +499,12 @@ section
     color:black;
     background-color: #D7CCC8
 }
+
+.titre h1
+{
+    font-size: 2rem;
+}
+.sous1
+{
+    font-size: 0.9rem;
 }
