@@ -1,3 +1,13 @@
+ajout 11/05/2020
+
+-validation W3p ok
+-remodelage du html suite a un pb de responsive mobile
+
+-affiner la police
+-faire un sous menu cacher
+-nettoyer le code css
+
+
 ajout 09/05/2020
 
 - Remplacement des balises id , supression des balises Div non necessaire
@@ -7,12 +17,12 @@ ajout 09/05/2020
 
 
 
-- Faire un dernier pointbreak responsive
-- Essayer de déplacer les puces en responsive tablette/portable ou a default trouver une solution
-- modifier la police en responsive portable, elle apparait beaucoup trop en gras
-- prevoir plusieurs modèle de Png notamment pour la version Portable et PC, rajouter un cercle noir si possible
-- les icones du bloc loisir sont a redimensionné
-- police illisible du menu , trouver une solution
+- Faire un dernier pointbreak responsive(fait)
+- Essayer de déplacer les puces en responsive tablette/portable ou a default trouver une solution(fait)
+- modifier la police en responsive portable, elle apparait beaucoup trop en gras(ameliorer)
+- prevoir plusieurs modèle de Png notamment pour la version Portable et PC, rajouter un cercle noir si possible(fait)
+- les icones du bloc loisir sont a redimensionné(fait)
+- police illisible du menu , trouver une solution(ameliorer)
 
 
 
