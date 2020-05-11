@@ -32,6 +32,7 @@ body
     width: 100%;
     height: 70%;
     justify-content: center;
+    margin-left: 3rem;
 }
 
 .titre h1
@@ -60,7 +61,6 @@ body
     display: flex;
     max-width: 80%;
     flex-wrap: wrap;
-    grid-column-gap: 5%;
     background-color: #ECEFF1;
     height: 100%;
 }
@@ -95,7 +95,6 @@ header
     display: flex;
     flex: 1;
     min-height: 20%;
-    grid-column-gap: 5%;
     min-width: 80%;
 }
 
@@ -143,6 +142,8 @@ section
     display: flex;
     max-width: 70%;
     flex-wrap: wrap;
+    margin-left: 2rem;
+    height: 100%;
 }
 
 section .police
@@ -165,8 +166,11 @@ section .police
    color: #90A4AE;
    display: flex;
    align-items: center;
-   grid-column-gap: 5%;
    min-width: 100%;
+}
+.sous_cv1 .fas, .sous_cv2 .fas, .sous_cv3 .far
+{
+    margin-right: 2rem;
 }
 
 
@@ -318,7 +322,6 @@ footer h3
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-column-gap: 5%;
     flex: 3;
     padding: 2rem;
 }
@@ -364,6 +367,13 @@ ul.special
     list-style-type: none;
 }
 
+i[class="fas fa-dice"]
+{
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
+
+}
+
 @media all and (min-width: 992px) and (max-width: 1199px)
 {
 html 
@@ -376,7 +386,6 @@ html
     display: flex;
     max-width: 95%;
     flex-wrap: wrap;
-    grid-column-gap: 5%;
     background-color: #ECEFF1;
 }
 .photo_du_profil .far
@@ -387,7 +396,20 @@ html
     margin-top: 0.2rem;
 
 }
+section 
+{
+    margin-left: 2rem;
+}
+.sous_cv1 .fas, .sous_cv2 .fas, .sous_cv3 .far
+{
+    margin-right: 1.5rem;
+}
+i[class="fas fa-dice"]
+{
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
 
+}
 }
 @media all and (min-width: 769px) and (max-width: 991px)
 {
@@ -402,8 +424,11 @@ html
     display: flex;
     max-width: 100%;
     flex-wrap: wrap;
-    grid-column-gap: 5%;
     background-color: #ECEFF1;
+}
+.titre
+{
+    margin-left: 2rem;
 } 
 .photo_du_profil .far
 {
@@ -412,7 +437,20 @@ html
     color: white;
 
 }
+section
+{
+    margin-left: 1rem;
+}
+.sous_cv1 .fas, .sous_cv2 .fas, .sous_cv3 .far
+{
+    margin-right: 1rem;
+}
+i[class="fas fa-dice"]
+{
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
 
+}
 }
 
 @media all and (max-width: 768px)
@@ -425,6 +463,11 @@ html
     font-size:80%;
 }
 
+.titre
+{
+    margin-left: 0rem;
+}
+
 
 #main_wrapper
 {
@@ -432,7 +475,6 @@ html
     flex-direction: column;
     min-width: 100%;
     flex-wrap: nowrap;
-    grid-column-gap: 0%;
     background-color: #ECEFF1;
     height: 100%;
 }
@@ -450,7 +492,6 @@ header
     order: 1;
     flex: 1;
     min-height: 20%;
-    grid-column-gap: 0%;
     width: 100%;
 }
 
@@ -461,7 +502,9 @@ section
     height: 100%;
     order: 2;
     flex-direction: column;
+    margin-left: 0rem;
 }
+
 
 .menu
 {
@@ -507,4 +550,16 @@ section
 .sous1
 {
     font-size: 0.9rem;
+}
+.sous_cv1 .fas, .sous_cv2 .fas, .sous_cv3 .far
+{
+    margin-right: 1rem;
+}
+
+i[class="fas fa-dice"]
+{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
 }
