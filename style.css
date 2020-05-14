@@ -10,27 +10,36 @@
     font-style: normal;
 }
 
-html 
+html
 {
     font-size: 100%;
+
+}
+
+html, body
+{  
+    margin: 0;
+    padding: 0;
 }
 
 body
 {
-    font-family: georgia,Verdana,Impact, Arial, Helvetica, sans-serif, 'Aba';
+    font-family: Georgia, sans-serif, Verdana,Impact, Helvetica, sans-serif, 'Aba';
     display: flex;
     justify-content: center;
     
 
 }
+h2, h3
+{
+    font-family: Georgia, Verdana, Arial, Helvetica,'Aba';
+}
+
 .titre
 {
-    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
-    width: 100%;
-    height: 70%;
     justify-content: center;
     margin-left: 3rem;
 }
@@ -40,11 +49,10 @@ body
     font-size: 4rem;
     font-style: italic;
     text-transform: uppercase;
-    width: 100%;
-    height: 50%;
 }
 
-.titre h2
+
+.titre p
 {
     font-size: 1rem;
     font-weight: normal;
@@ -59,10 +67,9 @@ body
 #main_wrapper
 {
     display: flex;
-    max-width: 80%;
+    width: 90%;
     flex-wrap: wrap;
     background-color: #ECEFF1;
-    height: 100%;
 }
 
 h2, h3
@@ -70,51 +77,21 @@ h2, h3
     text-transform: uppercase;
 }
 
-.fa-ul
-{
-    margin-left: 1.5rem !important;;
-}
-.fa-li
-{
-    top: 0.2rem;
-}
-li
-{
-    padding-left: 0!important;
-}
-.far, .fas
-{
-    color: #FF8A65;
-    font-size: 0.9rem;
-    margin: 0;
-    padding: 0;
-}
 
 header
 {   
     display: flex;
-    flex: 1;
-    min-height: 20%;
-    min-width: 80%;
+    width: 100%;
 }
 
 
 .photo_du_profil
 {
     display: flex;
-    min-width: 25%;
+    width: 20%;
     align-items: center;
     justify-content: center;
     background-color: #CFD8DC;
-}
-
-.photo_du_profil .far
-{
-    position: absolute;
-    font-size: 9rem;
-    margin-left: 0.5rem;
-    color: white;
-
 }
 
 
@@ -124,27 +101,53 @@ header
 {
     display: flex;
     flex-direction: column;
-    max-width: 25%;
+    width: 20%;
     background-color: #CFD8DC;
 }
 .sous_contact, aside p
 {
     font-size: 0.9rem;
 }
-.sous_contact
+.sous_contact p
 {
-    margin-top: 1.5rem;
+    padding-left: 2rem;   
 }
 
 
 section
 {
     display: flex;
-    max-width: 70%;
-    flex-wrap: wrap;
-    margin-left: 2rem;
-    height: 100%;
+    width: 80%;
+    flex-direction: column;
 }
+.sous_cv1, .sous_cv2, .sous_cv3, .sous_section
+{
+    margin-left: 3rem;
+}
+.sous_section
+{
+    display: flex;
+}
+.content1
+{
+    width: 20%;
+    display: flex;
+}
+
+.content2
+{
+    width: 80%;
+    display: block;
+}
+
+.content1 .far, .content1 .fas
+{
+    margin-right: 1rem;
+    padding-top: 1.3rem;
+    color: #FF8A65;
+    font-size: 0.9rem;
+}
+
 
 section .police
 {
@@ -157,6 +160,7 @@ section .police
 {
     color:  #90A4AE;
     font-size: 2rem;
+
 }
 
 
@@ -166,7 +170,6 @@ section .police
    color: #90A4AE;
    display: flex;
    align-items: center;
-   min-width: 100%;
 }
 .sous_cv1 .fas, .sous_cv2 .fas, .sous_cv3 .far
 {
@@ -174,94 +177,12 @@ section .police
 }
 
 
-.sous1
-{
-    display: flex;
-    width: 100%;
-}
 
-.sous_article1, .sous_article2, .sous_article5, .sous_article6, .sous_article7
-{
-    min-width: 20%;
-    height: 10%;
-    display: block;
-    flex: 1;
-    width: 80%;
-}
-.sous_article3, .sous_article4, .sous_article8, .sous_article9, .sous_article10 
-{
-    width: 75%;
-    min-height: 10%;
-    color:black;
-}
-.sous_article1
-{
-    order: 2;
-}
 .sous_article2
 {
-    order: 4;
-}
-.sous_article3
-{
-    order: 3;
-}
-.sous_article4
-{
-    order: 5;
-}
-.sous_article5
-{
-    order: 7;
-}
-.sous_article6
-{
-    order: 9;
-}
-.sous_article7
-{
-    order: 11;
-}
-.sous_article8
-{
-    order: 8;
-}
-.sous_article9
-{
-    order: 10;
-}
-.sous_article10
-{
-    order: 12;
-}
-.sous_cv1
-{
-    order: 1;
-}
-.sous_cv2
-{
-    order: 6;
-}
-.sous_cv3
-{
-    order: 13;
-}
-.sous1
-{
-    order: 14;
-}
-
-.sous_section2 span
-{
-    color: #5D4037;
-    font-size: 1.2rem;
-}
-
-
-.sous_article
-{
     display: block;
     flex: 1;
+
 }
 
 
@@ -286,9 +207,7 @@ nav h3
 {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
     flex: 6;
-    width: 90%;
 }
 aside
 {
@@ -296,27 +215,25 @@ aside
 }
 aside p
 {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     text-align: justify;
-}
-aside h3
-{   
-    display: flex;
 }
 .sous_menu
 {
     background-color: #212121;
 }
+h3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 footer
 {   
     flex: 1;
 }  
-footer h3
-{
-    flex: 2;
-}
 .sous_loisir
 {
     display: flex;
@@ -327,11 +244,8 @@ footer h3
 }
 h3
 {
-    display: flex;
     color: #ECEFF1;
     background-color:#212121;
-    justify-content: center;
-    align-items: center;
 }  
 
 p .police
@@ -339,7 +253,7 @@ p .police
     font-size: 1.1rem;
 }
 
-li .police
+.content1 .police
 {
     font-size: 1.2rem;
     color: #FF9800;
@@ -352,8 +266,10 @@ li .police
 
 .menu .fas 
 {
-    font-size: 3rem;
+    font-size: 1.8rem;
     color: #212121;
+    padding: 0.6rem;
+    margin: 0.5rem;
 }
 
 ul.normal
@@ -367,12 +283,22 @@ ul.special
     list-style-type: none;
 }
 
-i[class="fas fa-dice"]
-{
-    margin-left: 0.9rem;
-    margin-right: 0.9rem;
 
+footer .fas
+{
+    border: 4px solid;
+    border-radius: 100%;
+    background-color:  white;
 }
+
+
+.photo_du_profil img
+{
+    border: 5px solid #212121;
+    border-radius: 100%;
+    margin: 2rem;
+}
+
 
 @media all and (min-width: 992px) and (max-width: 1199px)
 {
@@ -383,33 +309,19 @@ html
 
 #main_wrapper
 {
-    display: flex;
-    max-width: 95%;
-    flex-wrap: wrap;
-    background-color: #ECEFF1;
+    width: 95%;
 }
-.photo_du_profil .far
-{
-    position: absolute;
-    font-size: 9.5rem;
-    color: white;
-    margin-top: 0.2rem;
 
-}
-section 
+.menu .fas 
 {
-    margin-left: 2rem;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    margin: 0.4rem;
 }
-.sous_cv1 .fas, .sous_cv2 .fas, .sous_cv3 .far
-{
-    margin-right: 1.5rem;
-}
-i[class="fas fa-dice"]
-{
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
 
-}
+
+
+
 }
 @media all and (min-width: 769px) and (max-width: 991px)
 {
@@ -421,36 +333,19 @@ html
 
 #main_wrapper
 {
-    display: flex;
-    max-width: 100%;
-    flex-wrap: wrap;
-    background-color: #ECEFF1;
+    width: 100%;
 }
-.titre
+.menu .fas 
+{
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    margin: 0.3rem;
+}
+.content2
 {
     margin-left: 2rem;
-} 
-.photo_du_profil .far
-{
-    position: absolute;
-    font-size: 10rem;
-    color: white;
+}
 
-}
-section
-{
-    margin-left: 1rem;
-}
-.sous_cv1 .fas, .sous_cv2 .fas, .sous_cv3 .far
-{
-    margin-right: 1rem;
-}
-i[class="fas fa-dice"]
-{
-    margin-left: 0.6rem;
-    margin-right: 0.6rem;
-
-}
 }
 
 @media all and (max-width: 768px)
@@ -463,46 +358,64 @@ html
     font-size:80%;
 }
 
-.titre
+
+.content1
 {
-    margin-left: 0rem;
+    width: initial;
+}
+.content2
+{
+    width: initial;
+    margin-left: initial;
+}
+
+.content1 p
+{
+    display: inline-flex;
+    margin-right: 2rem;
 }
 
 
+.content1 p
+{
+    font-size: 1.2rem;
+}
+.content1 .far, .content1 .fas
+{
+    padding-top: 1.5rem;
+}
 #main_wrapper
 {
     display: flex;
     flex-direction: column;
-    min-width: 100%;
-    flex-wrap: nowrap;
     background-color: #ECEFF1;
-    height: 100%;
+    width: 100%;
 }
-.photo_du_profil .far
+.photo_du_profil
 {
-    position: absolute;
-    font-size: 11rem;
-    color: white;
+    width: initial;
+}
+.photo_du_profil img
+{
+    border: 5px solid white;
+}
+.sous_cv1, .sous_cv2, .sous_cv3, .sous_section
+{
+    margin-left: initial;
+}
 
-}  
 header
 {
     display: flex;
     flex-direction: column;
     order: 1;
-    flex: 1;
-    min-height: 20%;
-    width: 100%;
 }
-
 section
 {
     display: flex;
-    min-width: 100%;
-    height: 100%;
+    width: initial;
     order: 2;
     flex-direction: column;
-    margin-left: 0rem;
 }
 
 
@@ -510,56 +423,65 @@ section
 {
     display: flex;
     order: 3;
-    max-width: 100%;
-    height: 100%;
     background-color: #CFD8DC;
+    width: initial;
 }
 
 .sous_contact
 {
     display: flex;
-    margin-left: 2.5rem;
-    flex: 1;
-    width: 100%;
-    margin-top: 0.5rem;
 
 }
 
-
-.sous_article1, .sous_article2, .sous_article5, .sous_article6, .sous_article7
+.sous_section
 {
-    min-width: 100%;
-    min-height: unset;
     display: flex;
-    flex: 1;
-    width: 100%;
-    background-color: #8D6E63;
+    flex-direction: column;
 }
-.sous_article3, .sous_article4, .sous_article8, .sous_article9, .sous_article10 
+
+.titre
 {
-    width: 100%;
-    min-height: unset;
-    color:black;
-    background-color: #D7CCC8
+    align-items: center;
+    margin-left: initial;
+    text-align: center;
 }
 
 .titre h1
 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
+h2
 .sous1
 {
     font-size: 0.9rem;
 }
+
 .sous_cv1 .fas, .sous_cv2 .fas, .sous_cv3 .far
 {
     margin-right: 1rem;
+    font-size: 1rem;
+}
+.sous_cv1, .sous_cv3, .sous_cv2
+{
+    font-size: 0.8rem;
 }
 
-i[class="fas fa-dice"]
+.content2 p .police
 {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    font-size: 1.5rem;
 }
+
+.menu .fas 
+{
+    font-size: 1.3rem;
+    padding: auto;
+    margin: auto;
+}
+
+.sous_section .sous_article2 + .sous_article2
+{
+    border-top: 0.5px rgb(36, 2, 2) dotted;() 
+}
+
 
 }
