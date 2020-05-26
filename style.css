@@ -105,11 +105,11 @@ header
     width: 20%;
     background-color: #CFD8DC;
 }
-.sous_contact, aside p
+address, aside p
 {
     font-size: 0.9rem;
 }
-.sous_contact p
+address p
 {
     padding-left: 2rem;   
 }
@@ -189,23 +189,24 @@ section .police
 
 
 
-nav, aside, footer
+.menu section, aside, footer
 {
     display: flex;
     flex-direction: column;
 }
-nav
+.menu section
 {
     flex: 3;
+    width: 100%;
 }
 
 
-nav h3
+.menu section h3
 {
     display: flex;
     flex: 2;
 }
-.sous_contact
+address
 {
     display: flex;
     flex-direction: column;
@@ -305,6 +306,7 @@ footer .fas
 {
     margin-left: 2rem;
 }
+
 
 
 @media all and (min-width: 992px) and (max-width: 1199px)
@@ -443,8 +445,11 @@ section
     order: 2;
     flex-direction: column;
 }
-
-
+.menu section
+{
+    width: initial;
+    order: initial;
+}
 .menu
 {
     display: flex;
@@ -453,7 +458,7 @@ section
     width: initial;
 }
 
-.sous_contact
+address
 {
     display: flex;
 
@@ -498,7 +503,7 @@ h2
 {
     border-top: 0.5px rgb(36, 2, 2) dotted;
 }
-.sous_contact, aside p
+address, aside p
 {
     font-size: 1.1rem;
 }
