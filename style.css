@@ -378,6 +378,9 @@ html
     margin-bottom: 3rem;
 }
 }
+a{
+    color: #5D4037;
+}
 
 @media all and (max-width: 768px)
 
